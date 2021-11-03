@@ -1,0 +1,115 @@
+# <#>matplotlib<> SpeedSheet
+<b>What you need, faster.<>
+
+
+
+# Summary
+
+## Figure Components
+
+<image "matplotlib - anatomy of a figure.png">
+
+(From matplotlib)
+
+
+
+# Library
+
+
+## Install Library - pip
+
+<cb>pip install matplotlib<>
+@
+@ command, commandline
+
+
+
+## Install Library - pip requirements.txt
+
+requirements.txt:
+
+<cb>matplotlib<>
+
+Command:
+
+<cb>pip install -r requiremets.txt<>
+@
+@ command, commandline
+
+
+
+## Program - Import
+
+<cb>import matplotlib.pyplot as plt<>
+
+
+
+# How To
+
+@ how-to
+
+
+
+### Plot - Heatmap
+
+<cb>import matplotlib.pyplot as plt
+
+plt.imshow(<v>data_2d<>, cmap='hot', interpolation='nearest')
+plt.show()<>
+
+Where:
+
+<cb><v>data_2d<> = [[<v>p11<>, <v>p12<>, <v>p13<>, <v>...<>],
+           [<v>p21<>, <v>p22<>, <v>p23<>, <v>...<>],
+            <v>...<>]<>
+@
+@ Heat Map, cmap, plt.imshow(), .imshow()
+
+
+
+### Plot - X Y 2D Graph
+
+<cb>import matplotlib.pyplot as plt
+
+plt.plot(*zip(*<v>xy_data<>))
+plt.show()<>
+
+Where:
+
+<cb><v>xy_data<> = [[<v>x1<>, <v>y1<>],
+           [<v>x2<>, <v>y2<>],
+               <v>...<>]]<>
+
+Or:
+
+<cb><v>xy_data<> = np.array(
+       [[<v>x1<>, <v>y1<>],
+        [<v>x2<>, <v>y2<>],
+            <v>...<>]])<>
+@
+@ plt.plot(), .plot()
+
+
+
+# Color Maps
+
+Color Maps (Official Site):
+<l>https://matplotlib.org/stable/tutorials/colors/colormaps.html<>
+
+@
+@ Colour Maps, cmap
+
+
+# Acronyms
+
+
+# Terms
+
+@ Terms
+
+
+### CMAP
+Color Map
+
+
+
