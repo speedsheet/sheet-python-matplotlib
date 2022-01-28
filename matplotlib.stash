@@ -2,7 +2,6 @@
 <b>What you need, faster.<>
 
 
-
 # Summary
 
 ## Figure Components
@@ -10,7 +9,6 @@
 <image "matplotlib - anatomy of a figure.png">
 
 (From matplotlib)
-
 
 
 # Library
@@ -50,7 +48,38 @@ Command:
 
 
 
+### Fonts - Get List
+
+<cb>font_manager.findSystemFonts(fontpaths = None, fontext = 'ttf')<>
+
+Usage:
+
+<cb>from matplotlib import font_manager
+
+= font_manager.findSystemFonts(fontpaths = None, fontext = 'ttf')<>
+
+
+Returns the complete list of true type fonts.
+
+
+Example:
+
+<cb>from matplotlib import font_manager
+
+<v>fonts<> = font_manager.findSystemFonts(fontpaths = None, fontext = 'ttf')
+
+for <v>font<> in <v>fonts<>:
+    print(<v>font<>)<>
+@
+@ matplotlib.font_manager.findSystemFonts(), .font_manager.findSystemFonts(), .findSystemFonts()
+
+
+
 ### Plot - Heatmap
+
+<cb>plt.imshow(<v>data_2d<>, cmap='hot', interpolation='nearest')<>
+
+Usage:
 
 <cb>import matplotlib.pyplot as plt
 
@@ -68,6 +97,10 @@ Where:
 
 
 ### Plot - X Y 2D Graph
+
+<cb>plt.plot(*zip(*<v>xy_data<>))<>
+
+Usage
 
 <cb>import matplotlib.pyplot as plt
 
