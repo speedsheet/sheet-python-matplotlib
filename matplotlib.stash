@@ -96,31 +96,202 @@ Where:
 
 
 
-### Plot - X Y 2D Graph
+### Plot - Graph Curve
+
+<cb>plt.plot(<v>x_data<>, <v>y_data<>)<>
+
+Usage:
+
+<cb>import matplotlib.pyplot as plt
+
+plt.plot(<v>x_data<>, <v>y_data<>)
+plt.show()<>
+
+
+Plots a curve for x and y values where each is stored in separate lists.
+
+
+Example:
+
+<cb>import matplotlib.pyplot as plt
+
+<v>x_data<> = [
+    -3.00, -2.50, -2.00, -1.50,
+    -1.00, -0.50, 0.00, 0.50,
+    1.00, 1.50, 2.00, 2.50, 3.00]
+
+<v>y_data<> = [
+    0.05, 0.08, 0.12, 0.18,
+    0.27, 0.38, 0.50, 0.62,
+    0.73, 0.82, 0.88, 0.92, 0.95]
+
+plt.plot(<v>x_data<>, <v>y_data<>)
+plt.show()<>
+@
+@ plt.plot(), .plot()
+@ 2d, x, y, line
+@ plot, draw, graph
+
+
+
+### Plot - Graph Curve - For X, Y Pairs
 
 <cb>plt.plot(*zip(*<v>xy_data<>))<>
 
-Usage
+Usage:
 
 <cb>import matplotlib.pyplot as plt
 
 plt.plot(*zip(*<v>xy_data<>))
 plt.show()<>
 
-Where:
+
+Python List:
 
 <cb><v>xy_data<> = [[<v>x1<>, <v>y1<>],
            [<v>x2<>, <v>y2<>],
-               <v>...<>]]<>
+           [<v>x3<>, <v>y3<>]]]<>
 
-Or:
+NumPy List:
 
 <cb><v>xy_data<> = np.array(
        [[<v>x1<>, <v>y1<>],
         [<v>x2<>, <v>y2<>],
-            <v>...<>]])<>
+        [<v>x3<>, <v>y3<>]])<>
+
+
+Plots a curve for a list of X, Y pairs.
+
+This first converts the list into 2 separate lists, x values and y values.
+These are then graphed by pyplot.
+
+
+Example:
+
+<cb>import matplotlib.pyplot as plt
+
+<v>xy_data<> = [
+    [-3.00, 0.05],
+    [-2.50, 0.08],
+    [-2.00, 0.12],
+    [-1.50, 0.18],
+    [-1.00, 0.27],
+    [-0.50, 0.38],
+    [0.00, 0.50],
+    [0.50, 0.62],
+    [1.00, 0.73],
+    [1.50, 0.82],
+    [2.00, 0.88],
+    [2.50, 0.92],
+    [3.00, 0.95]]
+
+plt.plot(*zip(*<v>xy_data<>))
+plt.show()<>
 @
 @ plt.plot(), .plot()
+@ 2d, x, y, line
+@ plot, draw, graph
+
+
+
+### Plot - Points / Scatter Plot
+
+<cb>plt.scatter(<v>x_data<>, <v>y_data<>)<>
+
+Usage:
+
+<cb>import matplotlib.pyplot as plt
+
+plt.scatter(<v>x_data<>, <v>y_data<>)
+plt.scatter(<v>x_data<>, <v>y_data<>, s = <v>radiuses<>, c = <v>colors<>, alpha = <v>alpha<>)
+plt.show()<>
+
+
+Plots points for each x and y values stored in separate lists.
+
+
+Example:
+
+<cb>import matplotlib.pyplot as plt
+
+<v>x_data<> = [
+    -3.00, -2.50, -2.00, -1.50,
+    -1.00, -0.50, 0.00, 0.50,
+    1.00, 1.50, 2.00, 2.50, 3.00]
+
+<v>y_data<> = [
+    0.05, 0.08, 0.12, 0.18,
+    0.27, 0.38, 0.50, 0.62,
+    0.73, 0.82, 0.88, 0.92, 0.95]
+
+plt.scatter(<v>x_data<>, <v>y_data<>)
+plt.show()<>
+@
+@ plt.scatter(), .scatter()
+@ 2d, x, y, line
+@ plot, draw, points, dots
+
+
+
+### Plot - Points / Scatter Plot - X, Y Pairs
+
+<cb>plt.scatter(*zip(*<v>xy_data<>))<>
+
+Usage:
+
+<cb>import matplotlib.pyplot as plt
+
+plt.scatter(*zip(*<v>xy_data<>))
+plt.scatter(*zip(*<v>xy_data<>), s = <v>radiuses<>, c = <v>colors<>, alpha = <v>alpha<>)
+
+plt.show()<>
+
+
+Python List:
+
+<cb><v>xy_data<> = [[<v>x1<>, <v>y1<>],
+           [<v>x2<>, <v>y2<>],
+           [<v>x3<>, <v>y3<>]]]<>
+
+NumPy List:
+
+<cb><v>xy_data<> = np.array(
+       [[<v>x1<>, <v>y1<>],
+        [<v>x2<>, <v>y2<>],
+        [<v>x3<>, <v>y3<>]])<>
+
+
+Plots points for a list of X, Y pairs.
+
+This first converts the list into 2 separate lists, x values and y values.
+These are then graphed by pyplot.
+
+
+Example:
+
+<cb>import matplotlib.pyplot as plt
+
+<v>xy_data<> = [
+    [-3.00, 0.05],
+    [-2.50, 0.08],
+    [-2.00, 0.12],
+    [-1.50, 0.18],
+    [-1.00, 0.27],
+    [-0.50, 0.38],
+    [0.00, 0.50],
+    [0.50, 0.62],
+    [1.00, 0.73],
+    [1.50, 0.82],
+    [2.00, 0.88],
+    [2.50, 0.92],
+    [3.00, 0.95]]
+
+plt.scatter(*zip(*<v>xy_data<>))
+plt.show()<>
+@
+@ plt.scatter(), .scatter()
+@ 2d, x, y, line
+@ plot, draw, points, dots
 
 
 
