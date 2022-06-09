@@ -1,14 +1,50 @@
 # <#>matplotlib<> SpeedSheet
-<b>What you need, faster.<>
+<b>Find it faster.<>
+
+This is an interactive <b>matplotlib<> cheat sheet. matplotlib is a data plotting and graphing library. Use the search to instantly get answers.
+
+
+<table><col><b>Basics<>
+
+<*><link "?q=install-only">Install<>
+<link "?q=interactive+mode">Interactive Mode<><>
+
+<b>Reference<>
+
+<*><link "?q=figure+components">Components<>
+<link "?q=online+docs">Online Docs<>
+<link "?q=terms">Terms<><><><col><b>Plotting<>
+
+<*><link "?q=plot+heatmap">Heatmap<>
+<link "?q=graph+curve">Graph Curve<>
+<link "?q=scatter+plot">Scatter Plot<><><><>
 
 
 # Summary
+
+
+### Official Site
+<l>https://matplotlib.org/<>
+@
+@ online docs, online-docs-only, docs-only
+
+
+
+### Online - Color Maps
+
+Color Maps:
+<l>https://matplotlib.org/stable/tutorials/colors/colormaps.html<>
+@
+@ Colour Maps, cmap, official
+@ online docs, online-docs-only, docs-only
+
+
 
 ## Figure Components
 
 <image "matplotlib - anatomy of a figure.png">
 
-(From matplotlib)
+(Source: <link "https://matplotlib.org/2.0.2/faq/usage_faq.html">matplotlib.org<>)
 
 
 # Library
@@ -18,7 +54,7 @@
 
 <cb>pip install matplotlib<>
 @
-@ command, commandline
+@ command, commandline, install-only
 
 
 
@@ -32,7 +68,7 @@ Command:
 
 <cb>pip install -r requiremets.txt<>
 @
-@ command, commandline
+@ command, commandline, install-only
 
 
 
@@ -42,15 +78,64 @@ Command:
 
 
 
-# How To
+# Interactive Mode
+@
+@ interactive-only, Mode
 
+
+## Interactive - Basics
+
+<card><table><col>Enable<><col><c>plt.ion()<><>
+<col>Disable<><col><c>plt.ioff()<><>
+<col>Show<><col><c>plt.show()<><>
+<col>Pause / Sleep<><col><c>plt.wait(<v>seconds<>)<><><><>
+
+
+## Interactive - Operations
+
+
+### Interactive Mode - Enable
+
+<cb>plt.ion()<>
+@
+@ plt.ion(), .ion()
+
+
+
+### Interactive Mode - Disable
+
+<cb>plt.ioff()<>
+@
+@ plt.ioff(), .ioff()
+
+
+
+### Interactive Mode - Pause / Block
+
+<cb>plt.wait(<v>seconds<>)<>
+@
+@ plt.wait(), .wait()
+
+
+
+### Interactive Mode - Show Active Figures
+
+<cb>plt.show()<>
+
+
+Shows figures until they are closed.
+
+
+
+# How To
+@
 @ how-to
 
 
 
 ### Fonts - Get List
 
-<cb>font_manager.findSystemFonts(fontpaths = None, fontext = 'ttf')<>
+<cb>= font_manager.findSystemFonts(fontpaths = None, fontext = 'ttf')<>
 
 Usage:
 
@@ -295,25 +380,12 @@ plt.show()<>
 
 
 
-# Color Maps
-
-Color Maps (Official Site):
-<l>https://matplotlib.org/stable/tutorials/colors/colormaps.html<>
-
-@
-@ Colour Maps, cmap
-
-
-# Acronyms
-
-
 # Terms
-
+@
 @ Terms
 
 
 ### CMAP
 Color Map
-
 
 
